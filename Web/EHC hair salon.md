@@ -3,7 +3,7 @@
 
 * [Source code](https://github.com/5c4ll10n/FPTU-Hacking-CTF-2022/blob/main/Data/app.py)
 
-Challenge này cho ta một trang web với giao diện như hình, có 1 box input text và 1 nút submit
+Challenge này cho ta một trang web với giao diện như hình, có 1 box để input text và 1 nút submit
 
 ![image](https://user-images.githubusercontent.com/82231862/176257788-ee5d0482-a574-4cf0-9a51-598ba054eaa9.png)
 

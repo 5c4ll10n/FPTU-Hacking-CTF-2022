@@ -53,7 +53,7 @@ Vì tác giả đã filter số nên ta có thể sử dụng hàm `[..].__len__
 Kết hợp 2 cái ta sẽ có được:
 
 * `().__doc__[[[],[],[]].__len__()]` để trả về kí tự `l`
-* `().__str__.__name__[[[],[]].__len__()] để trả về kí tự `s`
+* `().__str__.__name__[[[],[]].__len__()]` để trả về kí tự `s`
 
 Chúng ta thử inject payload bằng cách gọi [os.popen().read()](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#exploit-the-ssti-by-calling-ospopenread) để chạy lệnh `ls` trong shell
 

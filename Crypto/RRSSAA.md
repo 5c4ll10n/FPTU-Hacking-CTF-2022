@@ -1,3 +1,5 @@
+# RRSSAA
+
 Trong challenge có gắn kèm 2 file:
 	enc.py để thực hiện việc mã hóa flag
 	output.txt chứa kết quả mã hóa

@@ -38,7 +38,7 @@ regex = "request|config|self|class|flag|0|1|2|3|4|5|6|7|8|9|\"|\'|\\|\~|\%|\#"
 # giới hạn số kí tự tối đa có thể nhập vào
 ...
 ```
-;
+
 Không thể tạo payload trực tiếp, ta sẽ đi đường vòng bằng cách sử dụng các attribute và method có sẵn của python. Ví dụ:
 
 * `().__doc__` sẽ trả về doc của tuple: `Built-in immutable sequence.\n\nIf no argument is given, the constructor returns an empty tuple.\nIf iterable is specified the tuple is initialized from iterable's items.\n\nIf the argument is a tuple, the return value is the same object.`

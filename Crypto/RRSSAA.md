@@ -16,6 +16,9 @@ Phần flag c1:
 
 	Có n, p, q, e, ct1 rồi nên em dùng dcode.com để decode phần đầu của flag. Và có phần 1 của flag: FPTUHacking{Us3_0f_s1ngl3_pr1m3_4nd
   ![image](https://user-images.githubusercontent.com/102909809/176015781-1bbc9ee0-9887-40da-a5d7-d582dc5b9c19.png)
+  	(bổ sung)cách thứ 2 để tìm ra phần 1 của flag là cũng dùng RsaCtfTool nhưng mà không hiểu sao bọn em không ra mà giờ nó lại ra :))
+	![image](https://user-images.githubusercontent.com/103638792/176414312-4c90abc0-5b20-43ab-8113-9b9e36d60674.png)
+
 	
 
 Phần flag c2:

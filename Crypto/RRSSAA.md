@@ -7,7 +7,7 @@ Từ source code có thể thấy flag đã được chia làm 2 phần mà mã 
 
 Phần flag c1:
 
-    Có thể thấy tác giả đã gán số nguyên p, q thành 1 số nguyên tố 521 bits duy nhất và gấp 4 lần số đó lên để thành số n1
+    Có thể thấy tác giả đã gán số nguyên p, q thành 1 số nguyên tố 512 bits duy nhất và gấp 4 lần số đó lên để thành số n1
   ![image](https://user-images.githubusercontent.com/102909809/176015725-009dcbd9-9ee0-4a79-8e81-36ede3b1915c.png)
 
 	Theo lý thuyết RSA thì số n = p*q. Vậy nên em lấy số n bằng √n1

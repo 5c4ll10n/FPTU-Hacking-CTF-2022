@@ -8,7 +8,7 @@ Từ source code có thể thấy flag đã được chia làm 2 phần mà mã 
 
 Phần flag c1:
 
-    Có thể thấy tác giả đã gán số nguyên p, q thành 1 số nguyên tố 512 bits duy nhất và gấp 4 lần số đó lên để thành số n1
+    Có thể thấy tác giả đã gán số nguyên p, q thành 1 số nguyên tố 512 bits duy nhất và mũ 4 số đó lên để thành số n1
   ![image](https://user-images.githubusercontent.com/102909809/176015725-009dcbd9-9ee0-4a79-8e81-36ede3b1915c.png)
 
 	Theo lý thuyết RSA thì số n = p*q. Vậy nên em lấy số n bằng √n1
@@ -16,7 +16,7 @@ Phần flag c1:
 
 	Có n, p, q, e, ct1 rồi nên em dùng dcode.com để decode phần đầu của flag. Và có phần 1 của flag: FPTUHacking{Us3_0f_s1ngl3_pr1m3_4nd
   ![image](https://user-images.githubusercontent.com/102909809/176015781-1bbc9ee0-9887-40da-a5d7-d582dc5b9c19.png)
-
+	
 
 Phần flag c2:
 

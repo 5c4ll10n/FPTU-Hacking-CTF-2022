@@ -1,5 +1,9 @@
 
 # Write-up EHC Hair Salon
+*Kiến thức nền:
+PyJail Escape,
+OOP in Python,
+Server-sided template injection with Jinja2.*
 
 * [Source code](https://github.com/5c4ll10n/FPTU-Hacking-CTF-2022/blob/main/Data/app.py)
 

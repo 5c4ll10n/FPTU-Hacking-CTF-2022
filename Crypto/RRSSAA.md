@@ -1,6 +1,7 @@
 # RRSSAA
 
 Trong challenge có gắn kèm 2 file:
+	
 	- enc.py để thực hiện việc mã hóa flag
 	- output.txt chứa kết quả mã hóa
 Từ source code có thể thấy flag đã được chia làm 2 phần mà mã hóa từng phần một

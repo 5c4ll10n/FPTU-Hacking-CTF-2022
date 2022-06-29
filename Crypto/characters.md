@@ -1,7 +1,8 @@
-#characters
+# characters
+
 Trong challenge này có 2 file:
-  - enc.py: thực thi mã hóa flag
-  - out.txt: kết quả mã hóa
+  - [enc.py](/Data/enc.py): thực thi mã hóa flag
+  - [out.txt](/Data/out.txt): kết quả mã hóa
 
 Từ file out.txt ta có thể thấy ct (ciphertext), n, e. Và từ file enc.py có thể thấy đây là mã hóa RSA
 
@@ -17,5 +18,5 @@ Từ file out.txt ta có thể thấy ct (ciphertext), n, e. Và từ file enc.p
 	![image](https://user-images.githubusercontent.com/102909809/176236194-612d0b9d-f2a7-44a0-b0db-b1d80f17567d.png)
 	Decode từng phần tử của list sẽ thu được flag:
 	
-	FPTUHacking{3ncRYpt1ng_34ch_ch4r_ainT_G0nn4_h3lp}
+### Flag: FPTUHacking{3ncRYpt1ng_34ch_ch4r_ainT_G0nn4_h3lp}
 	

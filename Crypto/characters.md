@@ -18,7 +18,11 @@ Từ file out.txt ta có thể thấy ct (ciphertext), n, e. Và từ file enc.p
 2. Solve
 	Em đã thử decode phần tử đầu của list để xem kết quả trả về gì thì có kí tự đầu tiên của flag "F"
 	![image](https://user-images.githubusercontent.com/102909809/176236194-612d0b9d-f2a7-44a0-b0db-b1d80f17567d.png)
-	Decode từng phần tử của list sẽ thu được flag:
+	Code để decode từng phần tử của list: 
+	![image](https://user-images.githubusercontent.com/103638792/176424371-59623fb2-6a77-41f4-93b1-5b5aa1cb2409.png)
+	Kết quả khi chạy đoạn code trên:
+	![image](https://user-images.githubusercontent.com/103638792/176424608-1d0a8ee5-cff1-4a97-aada-70bd081d1a7d.png)
+	Sau đó thì sẽ là công việc hơi thổ dân 1 chút là thu thập từng kí tự một :<
 	
 ### Flag: FPTUHacking{3ncRYpt1ng_34ch_ch4r_ainT_G0nn4_h3lp}
 	
